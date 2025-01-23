@@ -1,0 +1,110 @@
+@media (max-width:1200px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: beige;
+        width: 100%;
+    }   
+    }
+
+@media (max-width:992px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: white;
+        width: 100%;
+    }
+  
+}
+@media (max-width:768px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 12px;
+        background-color: paleturquoise;
+        width: 100%;
+    }
+   
+}
+@media (max-width:481px) {
+    body {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+        background-color: blueviolet;
+        width: 100%;
+    }
+}
+.page-entity{
+    height: 70px;
+    display: flex;
+    flex-direction: row;  
+}
+.song-title,
+.type-of-song {
+    font-weight: bold;
+    cursor: pointer;
+}
+.song-writer {
+    font-size: smaller;
+    cursor: pointer;
+      
+}
+.left-section{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.left-section .serial-no {
+    font-weight: 600;
+    font-size: 16px;
+}
+.song-img {
+    width: 80px;
+    height: 60px;
+    border:1px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+.play-button {
+    position: absolute;
+    bottom: -4px;
+    right: 4px;  
+    opacity: 0;  
+}
+.left-section:hover .play-button {
+    opacity: 1;
+}
+
+.middle-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.general-right-section{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:1200px) {
+        width: 350px;
+    }
+    @media (max-width:992px) {
+        width: 350px;
+    }
+    @media (max-width:768px) {
+        width: 250px;
+    }
+    @media (max-width:480px) {
+        width: 250px;
+    }
+}
+

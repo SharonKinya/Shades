@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(255, 224, 230);
+    /* background-color: white; */
+    color: black;
+    font-size: 14px;
+    padding-left: 230px;
+    padding-right:50px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+p, 
+div{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+hr {
+    opacity: 0.5;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-title {
+    display: block;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.middle-buttons {
+    display: inline-flex;
+    margin-top: 2px;
+    cursor: pointer;
+    gap: 8px;
+}
+.like-button, 
+.comment-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    /* margin-left: 8px;
+    margin-right: 8px; */
+}
+.number-of-comments,
+.number-of-likes {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+    margin: 0;
+}
+/* .middle-section .last-section {
+    text-align: center;
+} */
+.download-button,
+.play-button ,
+.share-button,
+.add-button,
+.more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    background-color: pink;
+    border-radius: 50%;
+    color: white;
+    box-shadow:0 10px 20px rgba(255,26,26,0.22) ;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(0.90);
+} 
+/* .play-button {
+    transform: scale(1.0);
+    background: white;
+    color: pink;
+    transition: 0.5s;
+} */
+/* .play-button:hover {
+    background: pink;
+    color: white;
+} */
+
+.tooltip {
+    position: absolute;
+    background-color: pink;
+    color: black;
+    padding: 2px 8px;    
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 8px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    bottom: -17px;
+    white-space: nowrap;
+    z-index: 50;
+}
+.like-button:hover .tooltip,
+.comment-button:hover .tooltip,
+.views:hover .tooltip,
+.download-button:hover .tooltip,
+.play-button:hover .tooltip,
+.share-button:hover .tooltip,
+.add-button:hover .tooltip,
+.more-button:hover .tooltip {
+    opacity: 1;
+}
+.img-container {
+    position: relative;
+} 
+.views {
+    position: absolute;
+    padding: 1px 2px;
+    display: inline flex;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    bottom: 6px;
+    left: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.views i {
+    color: pink;
+   margin-right: 3px;
+}
+.song-length{
+    position: absolute;
+    padding: 1px 4px;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    bottom: 6px;
+    right: 2px;
+    border-radius: 2px;
+}
+.top-100-videos {
+    border-color: white;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    border-radius: 2px;
+    border-style: solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+}
